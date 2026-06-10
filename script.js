@@ -7,9 +7,9 @@ const estudiantes = [
 
 // Función que retorna una Promesa
 function buscarEstudiantePorId(id) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => { //promise
       const estudiante = estudiantes.find(e => e.id === id);
-  
+//condiciones
       if (estudiante) {
         resolve(estudiante);
       } else {
